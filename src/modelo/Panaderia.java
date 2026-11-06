@@ -30,12 +30,10 @@ public class Panaderia extends ProductoMenu {
     public String getCategoria() {
         return "Panadería";
     }
-
     @Override
     public String getEstacion() {
         return "Horno";
     }
-
     @Override
     public boolean esVegetariano() {
         return true;

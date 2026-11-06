@@ -74,7 +74,6 @@ public class Brunch {
         Pedido pedido = new Pedido(codigo, mesa, personas, aceptaPropina);
         pedidos.add(pedido);
         return pedido;
-        
     }
 
     private boolean v(ProductoMenu p, int c) {
@@ -106,6 +105,7 @@ public class Brunch {
             return false;
         }
         pedido.marcarPagado();
+        pedido.getMesa().liberar();
         return true;
     }
 

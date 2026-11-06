@@ -73,7 +73,8 @@ public abstract class ProductoMenu implements Identificable, Cobrable {
 
     /** "Plato fuerte", "Bebida" o "Panadería". */
     public abstract String getCategoria();
-
+/** Estación donde se prepara: "Cocina", "Barra" u "Horno". */
+    public abstract String getEstacion();
     /** true si el producto no lleva carne. */
     public abstract boolean esVegetariano();
 
